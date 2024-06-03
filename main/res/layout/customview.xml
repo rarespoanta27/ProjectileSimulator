@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/angleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter angle(degrees)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/speedInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter speed(m/s)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/angleInput"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Simulation"
+        android:layout_below="@id/speedInput"
+        android:layout_centerHorizontal="true"
+        android:background="@color/teal_200"
+        android:textColor="@android:color/white"/>
+
+    <com.example.beta_pdm.CustomView
+        android:id="@+id/customView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/startButton"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"/>
+
+</RelativeLayout>

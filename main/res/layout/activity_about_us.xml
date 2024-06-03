@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tri"
+        android:contentDescription="Background image" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="#AA000000">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/white"
+            android:background="#AA000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This app was developed to simulate the trajectories of various projectiles. It allows users to input different angles and speeds to see how projectiles move. This can be useful for educational purposes and for understanding basic physics principles."
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:background="#AA000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed by: Rares"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:background="#AA000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version: 1.0"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:background="#AA000000"/>
+
+    </LinearLayout>
+</RelativeLayout>

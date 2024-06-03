@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/projectile_background"
+        android:contentDescription="Background image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="#AA000000">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Famous Projectiles"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/white"
+            android:background="#AA000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Galileo's Cannonball Drop\nGalileo dropped two spheres of different masses from the Leaning Tower of Pisa to demonstrate that their time of descent was independent of their mass."
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:background="#AA000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Newton's Apple\nIsaac Newton's observation of an apple falling from a tree led to the formulation of the law of universal gravitation."
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:background="#AA000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. The Cannonball Fired from a Tower\nA classic physics problem where a cannonball is fired horizontally from a high tower and its trajectory is studied."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/white"
+            android:background="#AA000000"/>
+
+        <Button
+            android:id="@+id/startSimulationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try Your Own Projectile"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/callSuppButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Support"
+                android:onClick="callSupp"
+                android:background="@drawable/button_midnight_blue"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/sendEmailButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Email to Support"
+                android:onClick="sendEmailToSupp"
+                android:background="@drawable/button_midnight_blue"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/aboutUsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:onClick="aboutUs"
+            android:drawableLeft="@drawable/ic_info"
+            android:background="@drawable/button_midnight_blue"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</RelativeLayout>
