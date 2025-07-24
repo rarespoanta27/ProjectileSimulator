@@ -66,7 +66,6 @@ Contact
 For support or feedback, please contact:
 
 Email: rarespoanta10@gmail.com
-Phone: +40740109320
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
